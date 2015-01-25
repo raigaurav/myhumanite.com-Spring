@@ -1,0 +1,24 @@
+
+
+.navbar-default .navbar-nav>li>a{
+	font-family: Ubuntu;
+	color: teal;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus
+	{
+	background-color: #0D98BA;
+	color: white;
+}
+.navbar-default .navbar-brand {
+	color: #0D98BA;
+	font-family: Ubuntu;
+}
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+}
+
+#searchBox{
+	box-shadow: 0 4px 6px -5px hsl(0, 0%, 40%), inset 0px 4px 6px -5px #cfcdcd;
+
+	width : 270px;
+}

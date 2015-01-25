@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd"> 
+
+<tiles-definitions>
+
+<definition name="baseDefination" template="/WEB-INF/views/layout/layout.jsp">
+<put-attribute name="header" value="/WEB-INF/views/layout/menu.jsp"/>
+<put-attribute name="body" value=""/>
+</definition>
+
+<definition name="home" extends="baseDefination">
+<put-attribute name="header" value="" />
+<put-attribute name="body" value="/WEB-INF/views/home.jsp" />
+</definition>
+
+<definition name="mystory" extends="baseDefination">
+<put-attribute name="body" value="/WEB-INF/views/mystory.jsp" />
+</definition>
+
+<definition name="stories" extends="baseDefination">
+<put-attribute name="header" value="" />
+<put-attribute name="body" value="/WEB-INF/views/stories.jsp" />
+</definition>
+
+<definition name="newpost" extends="baseDefination">
+<put-attribute name="body" value="/WEB-INF/views/newpost.jsp" />
+</definition>
+
+<definition name="filteredpost" extends="baseDefination">
+<put-attribute name="body" value="/WEB-INF/views/filteredpost.jsp" />
+</definition>
+
+<definition name="volunteer" extends="baseDefination">
+<put-attribute name="body" value="/WEB-INF/views/volunteer.jsp" />
+</definition>
+
+<definition name="newcampaign" extends="baseDefination">
+<put-attribute name="body" value="/WEB-INF/views/newcampaign.jsp" />
+</definition>
+
+<definition name="campaign-details" extends="baseDefination">
+<put-attribute name="body" value="/WEB-INF/views/campaign-details.jsp" />
+</definition>
+
+<definition name="profile" extends="baseDefination">
+<put-attribute name="body" value="/WEB-INF/views/profile.jsp" />
+</definition>
+
+<definition name="mycampaigns" extends="baseDefination">
+<put-attribute name="body" value="/WEB-INF/views/mycampaigns.jsp" />
+</definition>
+
+<definition name="register" extends="baseDefination">
+<put-attribute name="header" value="" />
+<put-attribute name="body" value="/WEB-INF/views/register.jsp" />
+</definition>
+
+<definition name="campaignsearch" extends="baseDefination">
+<put-attribute name="header" value="" />
+<put-attribute name="body" value="/WEB-INF/views/campaignsearch.jsp" />
+</definition>
+
+</tiles-definitions>

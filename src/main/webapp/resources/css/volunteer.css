@@ -1,0 +1,109 @@
+body {
+	background-image: url("../or_jean.jpg");
+	background-color: #F7EFDC;
+}
+
+#top {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 180px;
+	background-image: url("images/staticcontent/arthumanity.jpg");
+}
+
+#top h1 {
+	color: #e6e6fa;
+	font-family: Ubuntu;
+	margin-top: 90px;
+	margin-left: 33%;
+}
+
+.container-fluid #sidebar {
+	position: absolute;
+	margin-top: 10px;
+	background-color: #ffffff;
+	top: 200px;
+	left: 20px;
+	width: 20%;
+	height: 70%;
+	border-radius: 5px;
+}
+
+.footer {
+	position: relative;
+	top: 70px;
+}
+
+#sidebar #searchbar {
+	position: relative;
+	top: 40px;
+	margin-left: 20px;
+	width: 85%;
+	box-shadow: 0 4px 6px -5px hsl(0, 0%, 40%), inset 0px 4px 6px -5px gray;
+	border-radius: 5px;
+}
+
+#sidebar #submitbutton {
+	position: relative;
+	top: 40px;
+	margin-left: 20px;
+}
+
+#sidebar a {
+	position: relative;
+	top: 25px;
+	margin-left: 50px;
+	font-family: Ubuntu;
+	font-size: medium;
+}
+
+#sidebar hr {
+	position: relative;
+	top: 40px;
+	color: gray;
+	background: gray;
+	width: 85%;
+	height: 1px;
+}
+
+.container-fluid #campaignArea {
+	position: relative;
+	background-color: #ffffff;
+	top: 220px;
+	left: 300px;
+	width: 900px;
+	height: auto;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.campaigns {
+	float: left;
+	font-family: Ubuntu;
+	color: gray;
+	border-radius: 10px;
+	background-color: #fbecde;
+	background-size: auto 100%;
+	border-bottom: medium;
+	height: 250px;
+	width: 250px;
+	margin: 15px 10px 20px 30px;
+}
+
+#campaignArea hr {
+	position: relative;
+	top: 1px;
+	color: grey;
+	background: white;
+	width: 85%;
+	height: 1px;
+}
+
+#campaignArea a {
+	color: #128b80;
+}
+
+.campaigns h4 {
+	margin-left: 15px;
+}

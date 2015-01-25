@@ -1,0 +1,70 @@
+body {
+	background-image: url("../or_jean.jpg");
+	background-color: #F7EFDC;
+}
+
+#campaigndetails {
+	position: relative;
+	top: 100px;
+	left: 100px;
+	background-color: white;
+	width: 60%;
+	height: 100vh;
+	border-radius: 20px;
+	font-family: Ubuntu;
+}
+
+#sidebar{
+	position: relative;
+	top: 200px;
+	right : 200px;
+	width : 300px;
+	height: 500px;
+	background-color: white;
+	border-radius: 10px;
+}
+#sidebar a {
+	margin-left: 30%;
+	margin-bottom: 10px;
+	font-size: medium;
+}
+
+#sidebar h3{
+	font-family : Ubuntu;
+	margin-left: 20%;
+	color: #337AB7;
+}
+
+.purpose, .category, .host, .city, .location, .date {
+	margin-top: 25px;
+	margin-left: 70px;
+	margin-right: 20px;
+}
+
+.purpose {
+	margin-top: 90px;
+}
+
+#campaigndetails .heading {
+	position: relative;
+	top: 40px;
+	margin-left: 70px;
+	margin-right: 20p;
+	color: #128B83;
+}
+
+#campaigndetails hr {
+	color: gray;
+	background: gray;
+	width: 85%;
+	height: 1px;
+}
+
+#joinbutton {
+	position: relative;
+	left: 150px;
+	width: 300px;
+	height: 40px;
+	font-family: Ubuntu;
+	font-size: large;
+}

@@ -1,0 +1,88 @@
+#back {
+	position: relative;
+	height : 200px;
+	width : 100%;
+	background: url(images/staticcontent/arthumanity.jpg) no-repeat center
+		center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#heading {
+	position: relative;
+	top: 0px;
+	height: 60px;
+	width: 100%;
+	height: 60px;
+	width: 100%;
+	background-color: #FCFCFC;
+}
+
+#heading h2 {
+	margin-top: 10px;
+	font-family: Ubuntu;
+	font-weight: normal;
+	color: #e27f3a;
+}
+
+#info {
+	margin-top: 40px;
+	margin-left: 40px;
+	color: #4F4F4F;
+	font-family: Ubuntu;
+	font-size: 20px;
+}
+
+#login .panel {
+	background-image: url("../or_jean.jpg");
+	margin-left: -12px;
+}
+
+#login {
+	background-image: url("../or_jean.jpg");
+}
+
+#login .panel label, #login .panel h4 {
+	font-family: Ubuntu;
+	color: grey;
+}
+
+#campaignArea {
+	position: relative;
+	background-color: #ffffff;
+	top: 40px;
+	left: 20px;
+	border-right: 0.8px solid #959393;
+}
+
+.campaigns {
+	float: left;
+	font-family: Ubuntu;
+	color: gray;
+	border-radius: 10px;
+	background-color: #fbecde;
+	background-size: auto 100%;
+	border-bottom: medium;
+	height: 250px;
+	width: 250px;
+	margin: 15px 10px 20px 30px;
+}
+
+#campaignArea hr {
+	position: relative;
+	top: 1px;
+	color: grey;
+	background: white;
+	width: 85%;
+	height: 1px;
+}
+
+#campaignArea a {
+	color: #128b80;
+}
+
+.campaigns h4 {
+	margin-left: 15px;
+}

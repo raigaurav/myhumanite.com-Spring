@@ -1,0 +1,180 @@
+body {
+	background-image: url("../or_jean.jpg");
+}
+
+#profile {
+	position: relative;
+	top: 80px;
+	left: 30px;
+	width: 65%;
+	height: 500px;
+	border-radius: 5px;
+}
+
+#profile #left {
+	float: left;
+	width: 30%;
+	height: 100%;
+	background-color: white;
+	border-radius :10px;
+}
+
+#profile #left #profilepic {
+	height: 45%;
+}
+img{
+	height:100% ;
+	width: 100%;
+}
+
+#profilepic img{
+border-radius : 10px;	
+}
+
+#profile #left #options {
+	height: 55%;
+}
+
+#profile #right {
+	float: left;
+	width: 65%;
+	height: 100%;
+	background-color: white;
+	border-radius :10px;
+	margin-left: 10px;
+}
+
+#profile #right hr {
+	position: relative;
+	color: gray;
+	background: white;
+	width: 85%;
+	height: 1px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 20px;
+}
+
+#profile #right div{
+	margin-top: 20px;
+}
+
+#profile #right h4{
+	margin-bottom: 0px;
+	color: gray;
+	margin-left: 30px;
+	font-family: Ubuntu;
+}
+
+#profile #right h3{
+	margin-left: 30px;
+	font-family: Times New Roman;   
+}
+
+#profile #right .inputProfile{
+	margin-top : 5px;
+	margin-left: 30px;
+	font-family: Times New Roman;
+	font-size: 1.3em; 
+}
+
+.fileUpload {
+	margin-top : 50px;
+	position: relative;
+	overflow: hidden;
+	-webkit-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	-moz-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	border-bottom-color:#333;
+	border:1px solid #61c4ea;
+	background-color:#7cceee;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	color:#333;
+	font-family: Ubuntu;
+	font-size:14px;
+	text-shadow:#b2e2f5 0 1px 0;
+	padding:5px;
+	height: 35px;
+}
+
+.fileUpload span{
+	margin-left: 25%;
+}
+
+.fileUpload input.upload {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+}
+
+.mybt{
+	position : relative;
+	-webkit-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	-moz-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	border-bottom-color:#333;
+	border:1px solid #61c4ea;
+	background-color:#7cceee;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	color:#333;
+	font-family: Ubuntu;
+	font-size:14px;
+	text-shadow:#b2e2f5 0 1px 0;
+	padding:5px;
+	width : 100%;
+	height: 35px;
+}
+.mybt:focus,.mybt:hover,.fileUpload:focus,.fileUpload:hover{
+	background-color:#519bb8;
+	color: white;
+}
+
+#options hr{
+	position: relative;
+	margin: 2px;
+}
+
+#campaignlist {
+	float: left; position : relative;
+	top: 100px;
+	left: 30px;
+	width: 70%;
+	height: 100vh;
+	background-color: white;
+	position: relative;
+	border-radius : 10px;
+}
+
+.campaigns {
+	float: left;
+	font-family: Ubuntu;
+	color: gray;
+	border-radius: 10px;
+	background-color: #fbecde;
+	background-size: auto 100%;
+	border-bottom: medium;
+	height: 250px;
+	width: 250px;
+	margin: 15px 10px 20px 30px;
+}
+
+.campaigns h4 {
+	margin-left: 15px;
+}
+
+#campaignlist h3{
+	margin-left: 50px;
+	font-family: Ubuntu;
+}
+
+.campaigns a {
+	color: #128b80;
+}

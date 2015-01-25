@@ -1,0 +1,47 @@
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/security
+           http://www.springframework.org/schema/security/spring-security.xsd">
+
+	<http auto-config="true" use-expressions="true">
+		<intercept-url pattern="/mystory*" access="hasAnyRole('ROLE_USER','ROLE_ADMIN')" />
+		<intercept-url pattern="/newpost*" access="hasAnyRole('ROLE_USER','ROLE_ADMIN')" />
+		<intercept-url pattern="/newcampaign*" access="hasAnyRole('ROLE_USER','ROLE_ADMIN')" />
+		<intercept-url pattern="/campaign-details*" access="hasAnyRole('ROLE_USER','ROLE_ADMIN')" />
+		<intercept-url pattern="/volunteer*" access="hasAnyRole('ROLE_USER','ROLE_ADMIN')" />
+		
+		<anonymous username="guest" granted-authority="ROLE_GUEST"/>
+
+		<form-login login-page="/home"
+			authentication-failure-url="/home?error=true"
+			default-target-url="/mystory" always-use-default-target="false" />
+		<logout logout-success-url="/home" />
+		<remember-me />
+	</http>
+
+	<beans:bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<beans:property name="driverClassName" value="com.mysql.jdbc.Driver"></beans:property>
+		<beans:property name="url" value="jdbc:mysql://localhost:3306/mydb"></beans:property>
+		<beans:property name="username" value="root"></beans:property>
+		<beans:property name="password" value="nannu"></beans:property>
+	</beans:bean>
+
+	<authentication-manager>
+		<authentication-provider>
+			<password-encoder hash="md5" />
+			<jdbc-user-service data-source-ref="dataSource"
+				users-by-username-query="
+				SELECT username, password, enabled
+                FROM USERS
+                WHERE username = ?"
+				authorities-by-username-query="
+                SELECT username, authority
+                FROM AUTHORITIES
+                WHERE username = ?" />
+		</authentication-provider>
+	</authentication-manager>
+
+</beans:beans>

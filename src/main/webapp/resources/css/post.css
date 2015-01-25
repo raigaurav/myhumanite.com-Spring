@@ -1,0 +1,27 @@
+
+#outsideForm{
+	position: absolute;
+	margin-top : 10px;
+	background-image : url("../gray_jean.png");
+	top: 70px;
+	left: 80px;
+	width: 75%;
+	height: 85%;
+	border-radius: 10px;
+	
+	
+}
+#upload{
+	margin-left:50px;
+	margin-right: 20px;	
+	margin-top: 10px;
+	
+}
+body
+{
+	background-image: url("images/staticcontent/campaignlove.jpg");
+	background-color: #F7F7F7;
+}
+h2{
+	font-family: Garamond;
+}
